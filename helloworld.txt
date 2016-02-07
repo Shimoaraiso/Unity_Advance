@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-hogeeee
-=======
-hogeeeee
->>>>>>> parent of 26ecc6a... hello
