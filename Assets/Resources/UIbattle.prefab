@@ -1215,7 +1215,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11439184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11452868}
+        m_MethodName: fireWep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11452868
@@ -1239,6 +1250,9 @@ MonoBehaviour:
   returnText: {fileID: 11455054}
   returnMenu: {fileID: 190018}
   mapUIobj: {fileID: 105504}
+  winLoseBase: {fileID: 110278}
+  winText: {fileID: 193152}
+  loseText: {fileID: 124548}
 --- !u!114 &11454108
 MonoBehaviour:
   m_ObjectHideFlags: 1

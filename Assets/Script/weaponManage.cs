@@ -28,11 +28,10 @@ public class weaponManage : MonoBehaviour {
 	void Update() {
 		Vector3 t = this.transform.TransformDirection(Vector3.one);
 		//Vector3 pp = this.transform.position;
-		Debug.Log("tr: " + t);
+		//Debug.Log("tr: " + t);
 		//Debug.Log("p: " + pp);
 
-		//if (myPV.isMine && !variableManage.controlLock) {
-		if (myPV.isMine) {
+		if (myPV.isMine && !variableManage.controlLock) {
 			// PC用入力処理
 			if (Input.GetKeyDown(KeyCode.L)) {
 				// Lキーを押すと武器発射扱い
@@ -57,8 +56,8 @@ public class weaponManage : MonoBehaviour {
 			lockCalcTimer += Time.deltaTime;
 			if (lockCalcTimer > 0.5f) {
 				lockCalcTimer = 0f;
-				//ターゲット格納(暫定的に全オブジェクトを対象)
-				GameObject[] allEnemy = GameObject.FindGameObjectsWithTag("Player");
+				//ターゲット格納
+				GameObject[] allEnemy = GameObject.FindGameObjectsWithTag("enemy");
 				//ロックオンを解除する
 				variableManage.lockoned = false;
 				//一定範囲内で最も近いターゲットを検索

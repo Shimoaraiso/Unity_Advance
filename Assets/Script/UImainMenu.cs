@@ -24,6 +24,7 @@ public class UImainMenu : MonoBehaviour {
 	}
 
 	public void jumpBattleScene(){
+		variableManage.initializeVariable();
 		Application.LoadLevel("battle");
 	}
 
